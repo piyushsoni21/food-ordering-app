@@ -1,5 +1,5 @@
 # Ignore node_modules directory
-node_modules/
+*node_modules/*
 
 # Ignore log files
 *.log
@@ -11,3 +11,9 @@ node_modules/
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
+
+# Ignore Parcel cache
+.parcel-cache/
+
+dist
+package-lock.json

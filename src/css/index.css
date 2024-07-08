@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.logo {
+    width: 100px;
+}
+
+.food-img {
+    width: 255px;
+}
+
+.header-items>ul {
+    display: flex;
+    padding: 0px 20px;
+    list-style-type: none;
+}
+
+.header-items>ul>li {
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-card{
+    width: 255px;
+    height: 450px;
+    border: 1px solid black;
+}
+
+.res-card:not(:first-child){
+    margin-left: 12px;
+}
+
+.filter{
+    display: flex;
+}
+
+.search{
+    margin-top: 10px ;
+}
+
+.rest-container{
+    display: flex;
+}
+
+.filter-btn{
+    width: 170px;
+    height: 20px;
+    margin: 10px;
+}
+.shimmer-container{
+    display: flex;
+}
+
+.shimmer-card{
+    width: 200px;
+    margin : 20px;
+    height: 400px;
+    background-color: #f0f0f0;
+}
