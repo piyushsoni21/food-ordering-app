@@ -66,5 +66,7 @@ export const restaurantList = [
 export const LOGO_URL =
   "https://logodesign.net/logo/smoking-burger-lecture-3624ld.png";
 
+
+  export const RESTAURANT_DETAILS_URL='https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5642452&lng=73.7768511&restaurantId='
 //Module cannot have multiple default exports
 //We can use Named exports and for importing named exports you need to use curly braces {} while importing it

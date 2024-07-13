@@ -12,6 +12,12 @@ When it  will be called ? When Rendercycle is finished
   useEffect(() => {
     console.log("use Effect called");
     fetchData();
+
+
+    //It is similar to componentwillMount in Class Based component Implementation.
+    return ()=>{
+      console.log("useeffect returned");
+    };
   }, []);
 
   const fetchData = async () => {
@@ -30,6 +36,11 @@ When it  will be called ? When Rendercycle is finished
   return (
     <div className="body">
       <div className="filter">
+    
+     {/*  <audio controls autoPlay>
+        <source src="https://www.youtube.com/watch?v=n9Y2Eb4BaSg" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+    </audio> */}
       <div className="search">
         <input type="text" className="search-box" value={searchText} onChange={(e) => {
           setSearchText(e.target.value);

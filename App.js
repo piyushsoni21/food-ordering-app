@@ -6,6 +6,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Error from "./src/components/Error";
 import About from "./src/components/About";
 import Contact from "./src/components/Contact";
+import RestaurantMenu from "./src/components/RestaurantMenu";
 
 
 /* One-way to pass data to functional component individual field instead of json i.e. 
@@ -37,6 +38,10 @@ const appRouter = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path:"/restaurant/:resId",
+        element: <RestaurantMenu />,
+      }
     ],
     errorElement: <Error />,
   },
