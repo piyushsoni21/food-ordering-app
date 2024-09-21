@@ -2,10 +2,12 @@ import { restaurantList } from "../utils/constants";
 import RestaurantCard from "../components/RestaurantCards";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurant] = useState([]);
   const [filteredList, setFilteredListOfRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
+ // const onlineStatus = useOnlineStatus();
   /* First Argument is callback function and Second Argument is Dependency Array
 When it  will be called ? When Rendercycle is finished
 */
@@ -15,9 +17,9 @@ When it  will be called ? When Rendercycle is finished
 
 
     //It is similar to componentwillMount in Class Based component Implementation.
-    return ()=>{
+     return ()=>{
       console.log("useeffect returned");
-    };
+    }; 
   }, []);
 
   const fetchData = async () => {
@@ -29,6 +31,13 @@ When it  will be called ? When Rendercycle is finished
     const jsonData = await data1.json();
     console.log(jsonData); */
   };
+
+ /* if(onlineStatus === false){
+
+  return (
+    <h1>You are offline!!</h1>
+  );
+ } */
  if (listOfRestaurants.length === 0) {
    return <Shimmer />;
  }
