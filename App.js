@@ -59,7 +59,7 @@ const appRouter = createBrowserRouter([
         element: <RestaurantMenu />,
       },
     ],
-    errorElement: <Error />,
+    errorElement: <Error />, 
   },
 ]);
 const root = createRoot(document.getElementById("root"));

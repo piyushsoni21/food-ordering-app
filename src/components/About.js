@@ -1,5 +1,5 @@
 import React from 'react'
-
+// About section
 const About = () => {
   return (
     <div>
@@ -10,3 +10,4 @@ const About = () => {
 }
 
 export default About
+ 
